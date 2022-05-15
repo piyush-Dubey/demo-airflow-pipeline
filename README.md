@@ -20,5 +20,6 @@
 7. Please note that the host details for the database may vary depending on the system where Docker is installed. This installation was found working on a Mac. For more information, refer to https://docs.docker.com/desktop/mac/networking/#use-cases-and-workarounds
 8. After adding the connections for source and destination database, refresh the DAGs and the parsing error should be solved.
 9. Trigger the DAG and notice that the data is present in the destination database.
-> docker exec -it <container-id-destination-db> psql -U airflow
+> docker exec -it [container-id-destination-db] psql -U airflow
+where [container-id-destination-db] is the container id of destination database
 
